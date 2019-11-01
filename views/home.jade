@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div#app
+      div.header
+        span.title 浪鸭的博客
+        img(src='../images/duck.jpg')
+        
+      div.siderbar
+        ul
+          li 设计
+          li 随笔
+
+      div.content
+        block content
+          each article in articles
+            div.article
+              div.head
+                div
+                  span.tag.tag-project #{article.tag.name}
+                  div.title #{article.title}
+                div.now-date
+                  div.top 
+                    span.year #{article.date.year}.
+                    span.month #{article.date.month}
+                  div.bottom #{article.date.date}
+              div.text #{article.content}
+
+      div.footer  
+        p 页脚
+
+  script(type='text/javascript', async src='/javascripts/home.js')       

@@ -1,0 +1,138 @@
+@font-face
+  font-family 'RobotoCondensed-Italic'
+  src url(../fonts/RobotoCondensed-Italic.ttf)
+@font-face  
+  font-family 'NotoSansSC-Light'
+  src url(../fonts/NotoSansSC-Light.otf)
+body
+  padding 0
+  margin 0
+  font-family 'NotoSansSC-Light'
+#app
+  padding 20px 0 40px 10vw
+ul
+ list-style none
+ padding 0
+ margin 0
+
+
+.siderbar
+  position fixed
+  top 100px
+  left 10vw
+  width 100px
+  box-sizing border-box
+  background linear-gradient(52deg, #ebfaff, #f1fff1)
+  ul
+    li
+      width 100%
+      font-size 14px
+      color #ff4c4c
+      cursor pointer
+      padding 4px 0 4px 6px
+
+
+.header
+  width 90vw
+  height 40px
+  background: linear-gradient(52deg, #ebfaff, #f1fff1)
+  display flex
+  justify-content space-between
+  align-items center
+  padding 0 8px
+  position relative
+  box-sizing border-box
+  img
+    width 30px
+    height 30px
+    position absolute
+    left -40px
+  &&:after
+    content ''
+    position absolute
+    z-index -1
+    top -6px
+    left -6px
+    width calc(90vw - 6px)
+    height 40px
+    // background linear-gradient(52deg, #fcf4ff, #bebaff)
+  .title
+    color #ff4c4c
+    font-weight bold
+    font-size 20px
+
+.footer
+
+.content
+  display flex
+  flex-direction row
+  justify-content space-between
+  padding-top 40px
+  padding-left 120px
+  .article
+    width 44%
+    height 280px
+    padding 20px
+    border 1px solid #debcff
+    box-shadow 0 0 10px 0px rgba(206,206,206,0.15)    
+    background linear-gradient(45deg, white, #fff8fe)
+    border-radius 4px
+    .head
+      display flex
+      justify-content space-between
+      .tag
+        font-size 12px
+        height 16px
+        line-height 16px
+        padding 2px 8px
+        border-radius 10px
+      .tag-project
+        color #e0d3ec
+        border 1px solid #e0d3ec
+      .tag-design
+        color #e0d3ec
+        border 1px solid #e0d3ec
+      .title
+        font-size 16px
+        font-weight bold
+        margin-top 18px
+
+        
+
+      .now-date
+        font-family 'RobotoCondensed-Italic'
+        display flex
+        flex-direction column
+        justify-content space-between
+        width 40px
+        height 60px
+        position relative
+        z-index 1
+        &:after
+          content ''
+          position absolute
+          left -2px
+          bottom 0
+          z-index -1
+          width 100%
+          height 20px
+          // background #e4fbe4;
+        .top
+          font-size 12px
+        .bottom
+          font-size 40px
+          font-weight bold
+          text-align center
+    
+    .text
+      margin-top 20px
+      font-size 14px
+
+  .article_detail
+    width 100%
+    display flex
+    justify-content center
+    img
+      width 400px
+
+
